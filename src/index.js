@@ -43,7 +43,7 @@ import emojipedia from "./emojipedia";
 //create an array that has the meanings from emojipedia, and they are truncated to 100 characters
 
 const meanings = emojipedia.map(function (element) {
-  return element.meaning;
+  return element.meaning.substring(0, 100);
 });
 
 console.log(meanings);
